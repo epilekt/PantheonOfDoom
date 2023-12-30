@@ -1,7 +1,4 @@
-<img src="src/main/pantheon-of-doom-30-12-2023.png" alt="альтернативный текст">
-
-<h1 align="center"><a href="https://daniilshat.ru/" target="_blank">PANTHEON OF DOOM</a> 
-<img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
+<img src="src/main/pantheon-of-doom-30-12-2023.png" alt="logo">
 <h3 align="center">💀 My vision of an RPG in Minecraft 💀</h3>
 
 
