@@ -16,5 +16,4 @@
 🤡 My daily life is filled with activities, the speed of development is unlikely to be outstanding, but I plan to do this regularly, as I enjoy this creativity. And I’ve had this idea for a long time, since about 2020. It's time to make my dream come true.
 
 
-😊 Thank you for your attention! \
-_Epilekt_ 💩
+😊 Thank you for your attention!  _Epilekt_ 💩
