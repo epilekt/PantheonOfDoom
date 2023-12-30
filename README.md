@@ -1,6 +1,4 @@
-"resource": [
-  {
-    "files" : ["**/*.png"],
+"resource": { "files" : ["PantheonOfDoom/pantheon-of-doom-30-12-2023.png"] }
 
 <h1 align="center"><a href="https://daniilshat.ru/" target="_blank">PANTHEON OF DOOM</a> 
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
