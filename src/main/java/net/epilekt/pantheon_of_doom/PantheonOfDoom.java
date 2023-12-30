@@ -32,5 +32,5 @@ public class PantheonOfDoom
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {}
     }
-    ////////////////
+    //////////////////
 }
