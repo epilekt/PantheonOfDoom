@@ -23,7 +23,7 @@ public class PantheonOfDoom
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
-    //    modEventBus.addListener(this::addCreative);
+
     }
     private void commonSetup (final FMLCommonSetupEvent event) {}
     //private void addCreative(CreativeModeTab.BuildContents event) {}
@@ -32,5 +32,5 @@ public class PantheonOfDoom
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {}
     }
-
+    ////////////////
 }
