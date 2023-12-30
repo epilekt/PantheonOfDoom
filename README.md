@@ -9,12 +9,12 @@
 - 🔵 Mobs and bosses 🎃
 - 🔵 New structures and buildings 🧱
   
-🔮So far, no one has created a modification that turns Minecraft into an RPG, except for RobertSkalko, the creator of Mine and Slash _(https://github.com/RobertSkalko/Mine-And-Slash-Rework)_. But he was inspired by the game Diablo, if I'm not mistaken. My inspirations are the game **The Witcher 3** and **The Elder Scrolls** series of games. I also drew inspiration from the manga **Berserk**.
+🔮So far, no one has created a modification that turns Minecraft into an RPG, except for RobertSkalko, the creator of Mine and Slash _(https://github.com/RobertSkalko/Mine-And-Slash-Rework)_. But he was inspired by the game Diablo, if I'm not mistaken. My inspirations are the game **The Witcher 3** and **The Elder Scrolls**. I also drew inspiration from the manga **Berserk**.
 
 😲 I will strive to create my own lore for my mod and exclude vanilla mechanics as much as possible, as I consider them a little childish and too simple.
 
-🤡 My daily life is filled with activities, the speed of development is unlikely to be outstanding, but I plan to do this regularly, as I enjoy this creativity. And I’ve had this idea for a long time, since about 2020. It's time to make your dream come true.
+🤡 My daily life is filled with activities, the speed of development is unlikely to be outstanding, but I plan to do this regularly, as I enjoy this creativity. And I’ve had this idea for a long time, since about 2020. It's time to make my dream come true.
 
 
-😊 Thank you for your attention!
+😊 Thank you for your attention! \
 _Epilekt_ 💩
