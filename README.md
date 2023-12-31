@@ -1,5 +1,5 @@
 <img src="src/main/pantheon-of-doom-30-12-2023.png" alt="logo">
-<h3 align="center">💀 My vision of an RPG in Minecraft 💀</h3>
+<h3 align="center">💀 My vision of RPG in Minecraft 💀</h3>
 
 ❔ The mod is created with the goal of adding **RPG mechanics** to the game. What I mean by this is:
 
