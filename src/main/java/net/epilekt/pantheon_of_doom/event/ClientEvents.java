@@ -1,7 +1,7 @@
 package net.epilekt.pantheon_of_doom.event;
 
 import net.epilekt.pantheon_of_doom.PantheonOfDoom;
-import net.epilekt.pantheon_of_doom.client.PlayerHp;
+import net.epilekt.pantheon_of_doom.gui.overlays.PlayerHp;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.RegisterGuiOverlaysEvent;
 import net.minecraftforge.client.event.RenderGuiOverlayEvent;
