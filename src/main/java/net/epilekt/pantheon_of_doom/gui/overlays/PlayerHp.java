@@ -14,11 +14,23 @@ import static net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH;
 public class PlayerHp {
     public static final ResourceLocation BASE = new ResourceLocation(PantheonOfDoom.MOD_ID,
             "textures/gui/overlays/back_bar.png");
+    public static final ResourceLocation FRONT = new ResourceLocation(PantheonOfDoom.MOD_ID,
+            "textures/gui/overlays/front_bar.png");
     public static final ResourceLocation HP_POINTS = new ResourceLocation(PantheonOfDoom.MOD_ID,
             "textures/gui/overlays/hp_point.png"); //need better texture, maybe darker
     public static final IGuiOverlay BASE_BAR = ((gui, poseStack, partialTick, width, height) -> {
         int x = width / 2 - 242;
         int y = height + 8;
+
+        RenderSystem.setShader(GameRenderer::getPositionTexShader);
+        RenderSystem.setShaderColor(1f,1f,1f,1f);
+        RenderSystem.setShaderTexture(0, BASE);
+        //----------------------screen x and y coordinates----instant pixel x,y------------sprite width--------------image width----
+        GuiComponent.blit(poseStack, x, y - 54, 0, 0, 108, 16, 108, 16);
+    });
+    public static final IGuiOverlay FRONT_BAR = ((gui, poseStack, partialTick, width, height) -> {
+        int x = width / 2 - 238;
+        int y = height + 12;
 
         RenderSystem.setShader(GameRenderer::getPositionTexShader);
         RenderSystem.setShaderColor(1f,1f,1f,1f);

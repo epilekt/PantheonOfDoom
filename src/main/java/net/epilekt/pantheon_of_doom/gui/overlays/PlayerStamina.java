@@ -17,10 +17,10 @@ public class PlayerStamina {
     public static final ResourceLocation BASE = new ResourceLocation(PantheonOfDoom.MOD_ID,
             "textures/gui/overlays/back_bar.png");
     public static final ResourceLocation STAMINA_POINTS = new ResourceLocation(PantheonOfDoom.MOD_ID,
-            "textures/gui/overlays/hp_point.png"); //need better texture, maybe darker
+            "textures/gui/overlays/stamina_point.png"); //need better texture, maybe darker
     public static final IGuiOverlay BASE_BAR = ((gui, poseStack, partialTick, width, height) -> {
         int x = width / 2 - 242;
-        int y = height + 8;
+        int y = height + 28;
 
         RenderSystem.setShader(GameRenderer::getPositionTexShader);
         RenderSystem.setShaderColor(1f,1f,1f,1f);
@@ -30,10 +30,10 @@ public class PlayerStamina {
     });
     public static final IGuiOverlay STAMINA_HUD = ((gui, poseStack, partialTick, width, height) -> {
         int x = width / 2 - 238;
-        int y = height + 12;
+        int y = height + 32;
 
         Player player = Minecraft.getInstance().player;
-        int player_stamina = (int) player.getAttribute(STAMINA).getBaseValue();
+        int player_stamina = (int) player.getAttributeBaseValue(STAMINA.get());
         //int player_stamina = (int) player.getAttribute(STAMINA).getBaseValue();
         int current_player_stamina = (int) player.getHealth();
         String staminaString = current_player_stamina + "/" + player_stamina;
@@ -52,7 +52,7 @@ public class PlayerStamina {
                 int spriteHeight = 8;
                 float xPos = x + i * spriteWidth;
                 if (i < fullSegments) { //full sprite
-                    GuiComponent.blit(poseStack, (int) xPos, y - 54, spriteX, spriteY, spriteWidth, spriteHeight, 10, 8);
+                    GuiComponent.blit(poseStack, (int) xPos, y - 74, spriteX, spriteY, spriteWidth, spriteHeight, 10, 8);
                 } else { //empty sprite
                     GuiComponent.blit(poseStack, (int) xPos, y, spriteX + spriteWidth, spriteY, spriteWidth, spriteHeight, 10, 8);
                 }
