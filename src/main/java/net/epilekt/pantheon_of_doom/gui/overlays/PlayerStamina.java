@@ -2,6 +2,7 @@ package net.epilekt.pantheon_of_doom.gui.overlays;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.epilekt.pantheon_of_doom.PantheonOfDoom;
+import net.epilekt.pantheon_of_doom.config.ModCfg;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiComponent;
@@ -10,8 +11,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.client.gui.overlay.IGuiOverlay;
 
-import static net.epilekt.pantheon_of_doom.attributes.RpgAttributes.STAMINA;
-import static net.epilekt.pantheon_of_doom.attributes.RpgAttributes.registerAttribute;
+import static net.epilekt.pantheon_of_doom.attributes.RpgAttributes.MAX_STAMINA;
 
 public class PlayerStamina {
     public static final ResourceLocation BASE = new ResourceLocation(PantheonOfDoom.MOD_ID,
@@ -28,12 +28,15 @@ public class PlayerStamina {
         //----------------------screen x and y coordinates----instant pixel x,y------------sprite width--------------image width----
         GuiComponent.blit(poseStack, x, y - 54, 0, 0, 108, 16, 108, 16);
     });
+    private int start(){
+        return ModCfg.startingStamina();
+    };
     public static final IGuiOverlay STAMINA_HUD = ((gui, poseStack, partialTick, width, height) -> {
         int x = width / 2 - 238;
         int y = height + 32;
 
         Player player = Minecraft.getInstance().player;
-        int player_stamina = (int) player.getAttributeBaseValue(STAMINA.get());
+        int player_stamina = ModCfg.startingStamina();
         //int player_stamina = (int) player.getAttribute(STAMINA).getBaseValue();
         int current_player_stamina = (int) player.getHealth();
         String staminaString = current_player_stamina + "/" + player_stamina;

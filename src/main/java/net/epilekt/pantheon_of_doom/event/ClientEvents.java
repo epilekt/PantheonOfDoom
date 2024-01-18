@@ -12,8 +12,6 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
-import static net.epilekt.pantheon_of_doom.util.StaminaHandler.*;
-
 public class ClientEvents {
 
     @Mod.EventBusSubscriber(modid = PantheonOfDoom.MOD_ID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -25,29 +23,6 @@ public class ClientEvents {
             event.registerAboveAll("health", PlayerHp.HEALTH_HUD);
             event.registerAboveAll("stamina", PlayerStamina.STAMINA_HUD);
         }
-
-        @SubscribeEvent
-        public static void onStaminaUpdate(TickEvent.PlayerTickEvent event) {
-
-            Player player = (Player) event.player;
-            boolean b = true;
-
-            if (getStamina(player) <= 0.0F) {
-                player.setSprinting(false);
-                b = false;
-                if (player.tickCount % 120 == 0)
-                {
-                    b = true;
-                }
-            }
-
-            if(player.isSprinting()) {
-                decreaseStamina(player, 0.25F);
-            }
-            else if (!player.isSprinting() && b) regenStamina(player, 0.25F);
-
-        }
-
     }
     @SubscribeEvent
     public static void renderVanillaHUDs(RenderGuiOverlayEvent.Pre event) {
